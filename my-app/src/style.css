@@ -1,0 +1,47 @@
+.ui.borderless.topmenu.menu{
+  box-shadow: none;
+}
+.ui.basic.black.button{
+  width:190px;
+  margin-bottom:10px;
+  margin-top:10px;
+  padding-left:1px;
+  padding-bottom:1px;
+  padding-top:1px
+}
+.smaller{
+  width: 150px;
+  height: 60px;
+}
+
+.text{
+  font-size: 15px;
+}
+
+.big-text{
+  font-size:18px;
+  word-wrap: break-word;
+  width: 500px;
+  line-height: 30px;
+}
+
+.ui.big.blue.button{
+  margin-top:20px;
+  margin-bottom:5px;
+  background-color: #3f46ad;
+  width:150px;
+}
+
+.big-bold-text{
+  font-weight: bolder;
+  font-size: 90px;
+  padding-top:100px;
+  padding-bottom:50px;
+  line-height: 90px;
+}
+
+.white-background {
+  background-color: white;
+  background-size: cover;
+  height: 200px;
+}
