@@ -1,42 +1,43 @@
 .ui.borderless.topmenu.menu{
   box-shadow: none;
 }
-.ui.basic.black.button{
-  width:190px;
+.ui.basic.button.dropdown{
   margin-bottom:10px;
-  margin-top:10px;
-  padding-left:1px;
-  padding-bottom:1px;
-  padding-top:1px
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-right: 0px;
+  font-size: 16px;
+  text-align: center;
+  width: 210px;
 }
+
+
 .smaller{
   width: 150px;
   height: 60px;
 }
 
-.text{
-  font-size: 15px;
-}
+
 
 .big-text{
-  font-size:18px;
-  word-wrap: break-word;
-  width: 500px;
+  font-size:20px;
+  width: 550px;
   line-height: 30px;
+  padding-bottom: 20px;
 }
 
-.ui.big.blue.button{
-  margin-top:20px;
-  margin-bottom:5px;
+.ui.big.button{
+  paddiing:;
   background-color: #3f46ad;
   width:150px;
+  color:white;
+  font-size: 14px;
 }
 
 .big-bold-text{
   font-weight: bolder;
-  font-size: 90px;
-  padding-top:100px;
-  padding-bottom:50px;
+  font-size: 77px;
+  padding-bottom:20px;
   line-height: 90px;
 }
 
