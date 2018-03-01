@@ -44,6 +44,7 @@ class MiddleSection extends React.Component{
   render () {
     const src1 = 'https://a.slack-edge.com/52353/marketing/img/home/home_illo.png'
     const gstyle = {height: "700px"};
+    const tstyle = {paddingTop: '10px', paddingBottom:'150px'};
     return(
           <Container>
             <Grid columns={2} style={gstyle} verticalAlign="middle" centered>
@@ -56,11 +57,11 @@ class MiddleSection extends React.Component{
                 <Grid.Column>
                   <div className="big-bold-text"> Where Work<br/> Happens</div>
                   <div className="big-text">When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.</div>
-                  <Button size='big'>
+                  <Button size='big' >
                     Get Started
                   </Button>
+                  <div style={tstyle}>Already using Slack? <a>Sign In.</a></div>
                 </Grid.Column>
-
               </Grid.Row>
             </Grid>
           </Container>
@@ -70,16 +71,77 @@ class MiddleSection extends React.Component{
 
 class Sponsers extends React.Component {
   render() {
+    const fstyle = {fontSize:'15px'};
+    const bstyle = {marginBottom:'20px'};
+
+    const src1 = "https://a.slack-edge.com/c04e5/marketing/img/logos/company/airbnb.png"
+    const src2 = "https://a.slack-edge.com/c04e5/marketing/img/logos/company/capital_one.png"
+    const src3 = "https://a.slack-edge.com/c04e5/marketing/img/logos/company/harvard.png"
+    const src4 = "https://a.slack-edge.com/4b6fe/marketing/img/logos/company/los-angeles-times.png"
+    const src5 = "https://a.slack-edge.com/c04e5/marketing/img/logos/company/oracle.png"
+    const src6 = "https://a.slack-edge.com/c04e5/marketing/img/logos/company/ticketmaster.png"
     return (
-        <h1>LOL</h1>
+        <div className='grey-background'>
+        <Container>
+          <Grid centered>
+            <Grid.Row>
+              <div className="medium-bold-text"> You're in good company</div>
+            </Grid.Row>
+
+            <Grid.Row>
+              <p style={fstyle}>Millions of people around the world have already made Slack the place where their work happens.</p>
+            </Grid.Row>
+
+            <Grid.Row>
+              <Button style={bstyle} size='big' basic> DISCOVER WHY</Button>
+            </Grid.Row>
+
+            <Grid divided='vertically' centered>
+              <Grid.Row>
+                <Grid.Column width={3}>
+                  <Image src={src1} />
+                </Grid.Column>
+                <Grid.Column width={3}>
+                  <Image src={src2} />
+                </Grid.Column>
+                <Grid.Column width={3}>
+                  <Image src={src3} />
+                </Grid.Column>
+              </Grid.Row>
+
+              <Grid.Row style={bstyle}>
+                <Grid.Column width={3}>
+                  <Image src={src4} spaced />
+                </Grid.Column>
+                <Grid.Column width={3}>
+                  <Image src={src5} />
+                </Grid.Column>
+                <Grid.Column width={3}>
+                  <Image src={src6} />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+
+          </Grid>
+        </Container>
+        </div>
+
     )
   }
 }
 
   class Footer extends React.Component{
   render () {
+  const src1 = "https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png"
     return (
-        <h1>LOL</h1>
+ <div className="white-background">
+  <Grid columns={5} padded>
+  <Grid.Column width={7}>
+    <Image src={src1} size='mini' />
+  </Grid.Column>
+  </Grid>
+ </div>
+
     )
   }
 }

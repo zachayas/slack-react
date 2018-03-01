@@ -11,13 +11,10 @@
   width: 210px;
 }
 
-
 .smaller{
   width: 150px;
   height: 60px;
 }
-
-
 
 .big-text{
   font-size:20px;
@@ -27,11 +24,23 @@
 }
 
 .ui.big.button{
-  paddiing:;
-  background-color: #3f46ad;
+  background-color: #3f46ad !important;
   width:150px;
-  color:white;
-  font-size: 14px;
+  color:white !important;
+}
+.ui.big.button:hover {
+  background-color: #3f46ad !important;
+  width: 150px;
+  color: white;
+}
+
+.ui.big.basic.button{
+  color: #3f46ad !important;
+  width:200px;
+}
+.ui.big.basic.button:hover {
+  width: 200px;
+  color: #3f46ad !important;
 }
 
 .big-bold-text{
@@ -40,6 +49,20 @@
   padding-bottom:20px;
   line-height: 90px;
 }
+
+
+.medium-bold-text{
+  font-weight: bolder;
+  font-size: 32px;
+
+}
+
+
+.grey-background {
+  background-color: #ebebeb;
+  background-size: cover;
+}
+
 
 .white-background {
   background-color: white;
